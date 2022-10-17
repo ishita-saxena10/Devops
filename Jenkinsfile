@@ -13,9 +13,11 @@ pipeline {
         }
 
         stage('Test') {
-            steps {
-                echo "++++Test Successful++++"
+            agent {
+                docker { image 'python_cal' }
             }
+            steps {
+                sh('python3 Calculator.py')
         }
     }
 }
