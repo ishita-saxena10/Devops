@@ -5,9 +5,9 @@ FROM python:latest
 WORKDIR /usr/app/src
 
 
-COPY Calculator.py ./
+COPY unit_test.py ./
 
 
 
 
-CMD [ "python", "./Calculator.py"]
+CMD [ "python", "./unit_test.py"]
