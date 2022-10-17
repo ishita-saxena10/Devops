@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "++++Build Successful++++"
-                sh "/usr/bin/python3 --version"
+                sh "python3 --version"
                 
                 
             }
