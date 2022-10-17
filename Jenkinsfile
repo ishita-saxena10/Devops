@@ -18,7 +18,7 @@ pipeline {
             }
             steps {
                 echo "++++Testing Successful++++"
-                sh('python3 Calculator.py')
+                sh('python3 unit_test.py')
         }
     }
 }}
