@@ -20,4 +20,4 @@ pipeline {
                 sh('python3 Calculator.py')
         }
     }
-}
+}}
