@@ -14,7 +14,7 @@ pipeline {
 
         stage('Test') {
             agent {
-                docker { image 'test_call' }
+                docker { image 'python:3.8.15-alpine3.16' }
             }
             steps {
                 echo "++++Testing Successful++++"
