@@ -1,4 +1,18 @@
 pipeline {
+    agent {
+        docker { image 'python:3.8.15-alpine3.16' }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'python --version'
+                sh 'python unit_test.py'
+            }
+        }
+    }
+}
+
+"""pipeline {
     agent any
     stages {
 
@@ -21,4 +35,4 @@ pipeline {
                 sh('python3 unit_test.py')
         }
     }
-}}
+}}"""
